@@ -64,7 +64,10 @@ print(R2D2_S5)
 print("Why don't we play a guess game to decide who will win? \n")
 
 # question
-question="Can you guess what I am? \n I am living in China. \n I am a kind of bear. \n I am black and white. \n I eat bamboo.\n >>> "
+question="Can you guess what I am? \n I am living in China.\
+\n I am a kind of bear. \
+\n I am black and white. \
+\n I eat bamboo.\n >>> "
 
 time.sleep(2)   # Delays for 5 seconds.
 
