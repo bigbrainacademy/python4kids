@@ -45,23 +45,11 @@
 
 import turtle
 
-# create a screen/window (as a canvas) by initializing a variable for it.
-# Set up the screen
-# s = turtle.getscreen()
-# # set the background color
-# s.bgcolor("black")  # "black", "white", "green"
-
-#  initialize a variable name that you like (t, my_turtle, etc) to refer to the turtle
-
 t = turtle.Turtle()
- 
-
 # The turtle is like a pen, you can set pencolor
 t.pencolor('red')
 # change the color of the turtle
 t.fillcolor("purple")
-
-# t.color("red", "pruple")
 
 # you can set a shape for the pen
 t.shape("turtle")   # "arrow", "circle")

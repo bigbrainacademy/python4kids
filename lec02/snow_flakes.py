@@ -4,27 +4,56 @@
 # source code is originally from:
 # https://projects.raspberrypi.org/en/projects/turtle-snowflakes
 # ***************************************************************
-
+ 
  import turtle
  import random
 
-# # multi-coloured snowflake!
-
-# # snowflake I
  elsa = turtle.Turtle()
  wn = turtle.Screen()
  wn.bgcolor("grey")
 
- colors = ["red", "yellow", "blue", "green"]
+ # plot the first diamond
+ elsa.color("red")
+ elsa.forward(100)
+ elsa.right(60)
+ elsa.forward(100)
+ elsa.right(120)
+ elsa.forward(100)
+ elsa.right(60)
+ elsa.forward(100)
 
- for i in range(0,10):
-   for j in range(0,2):
-     elsa.forward(100)
-     elsa.right(60)
-     elsa.forward(100)
-     elsa.right(120)
-   elsa.right(36)
-   elsa.color(random.choice(colors))
+ # prepare for the second diamond
+ elsa.right(120)
+ elsa.right(36)
+
+ # plot the second diamond
+ elsa.color("yellow")
+ elsa.forward(100)
+ elsa.right(60)
+ elsa.forward(100)
+ elsa.right(120)
+ elsa.forward(100)
+ elsa.right(60)
+ elsa.forward(100)
+
+
+ # prepare for the third diamond
+ elsa.right(120)
+ elsa.right(36)
+
+
+ # use loop
+ #
+ # colors = ["red", "yellow", "blue", "green"]
+
+ # for i in range(0,10):
+ #   for j in range(0,2):
+ #     elsa.forward(100)
+ #     elsa.right(60)
+ #     elsa.forward(100)
+ #     elsa.right(120)
+ #   elsa.right(36)
+ #   elsa.color(random.choice(colors))
  
  
  
