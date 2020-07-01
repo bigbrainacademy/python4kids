@@ -45,7 +45,7 @@ secret_number = random.randint(1, 10)
 
 # guess a number using input()
 # attention: here your_guess is a string!
-your_guess = input("Guess a number between 1 and 10: ")
+your_guess = input("Guess a secret number between 1 and 10: ")
 
 # we need to convert the string to integer number using int()
 guess = int(your_guess)
