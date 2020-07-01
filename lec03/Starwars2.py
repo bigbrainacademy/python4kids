@@ -35,6 +35,8 @@ print(s6+str4nextYear+' year old!') # we can add strings
 
 print(s7)
 print(s8)
+
+
  
 
 # Below is for the guessing part
