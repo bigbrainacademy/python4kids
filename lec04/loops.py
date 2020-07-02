@@ -17,7 +17,7 @@ t=turtle.Turtle()
  t.forward(100)
  t.left(90)
 
- use Loops
+ #use Loops
  for i in [0,1,2,3,4]:
    print(i)
 
