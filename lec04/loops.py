@@ -7,19 +7,23 @@ import turtle
 
 t=turtle.Turtle()
 
-# draw a square
-# t.forward(100)
-# t.left(90)
-# t.forward(100)
-# t.left(90)
-# t.forward(100)
-# t.left(90)
-# t.forward(100)
-# t.left(90)
+ draw a square
+ t.forward(100)
+ t.left(90)
+ t.forward(100)
+ t.left(90)
+ t.forward(100)
+ t.left(90)
+ t.forward(100)
+ t.left(90)
 
-# use Loops
-# for i in [0,1,2,3,4]:
-#   print(i)
+ use Loops
+ for i in [0,1,2,3,4]:
+   print(i)
+
+for i in range(4):
+    t.forward(100)
+    t.left(90)
 
 # # Draw a square inside another square box.
 t.color('green')
@@ -34,7 +38,7 @@ t.reset()
 #   print(color)
 # List likes a train
 # each element likes train cargo
-# we can peak one cargo
+# we can pick one cargo
 
 # [0]-[1]-[2]-[3]-[4]-...-[N]
 #
@@ -60,12 +64,12 @@ for i in range(5):
 
 
 
-# colors = [ "red","purple","blue","green","orange","yellow"]
-# for x in range(60):
-#    t.color(colors[x % 6])
-#    t.width(x/100 + 1)
-#    t.forward(x)
-#    t.left(59)
+ colors = [ "red","purple","blue","green","orange","yellow"]
+ for x in range(60):
+    t.color(colors[x % 6])
+    t.width(x/100 + 1)
+    t.forward(x)
+    t.left(59)
  
 #  # snow flakes
 # import random
