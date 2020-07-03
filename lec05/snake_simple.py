@@ -4,9 +4,8 @@ import time
 import random
 
 wn = turtle.Screen()
-wn.bgcolor("grey")
-
-wn.setup(400,400)
+#wn.bgcolor("grey")
+#wn.setup(400,400)
 
 t = turtle.Turtle()
 t.speed(0)
@@ -16,7 +15,10 @@ class game:
   # initialization of the variables
     started = False
     direction = 0
+    
+    # temporary direction
     tmpdir = 0
+    
     trailpositions=[(0,0)]
   # define the positions of the food
     foodpos = (random.randint(-3,3)*50,random.randint(-3,3)*50)
