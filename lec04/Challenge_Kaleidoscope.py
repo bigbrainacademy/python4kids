@@ -2,11 +2,12 @@
 import random
 import turtle
 
-t = turtle.Pen()
-t.speed(0)
-turtle.bgcolor('black')
+t = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgcolor('black')
 colors=['red', 'yellow', 'blue', 'green', 'orange', 'purple', 'white', 'gray']
 
+t.speed(0)
 for n in range(50):
     # generate spirals of random sizes/colors at random locations on the screen
     t.pencolor(random.choice(colors))   # pick a random color from colors[]
@@ -18,8 +19,8 @@ for n in range(50):
     angle = t.heading()
     
     # generate a random (x,y) location on the screen
-    x = random.randrange(size,turtle.window_width()//2)
-    y = random.randrange(size,turtle.window_height()//2)
+    x = random.randrange(size,200//2)
+    y = random.randrange(size,200//2)
     # first spiral
     t.penup()
     t.setpos(x,y)
