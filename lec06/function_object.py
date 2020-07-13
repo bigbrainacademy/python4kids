@@ -7,32 +7,32 @@
 # - how to pass arguments
 # - implementation of functions into Turtle
 
-# def my_function(name):
-#   print("Hi," + name)
-# my_function("Alice")
+ def my_function(name):
+   print("Hi," + name)
+ my_function("Alice")
 
-# def apples(color,number):
-#   print("I want "+str(number)+' '+color+" apples.")
-# apples('red',4)
+ def apples(color,number):
+   print("I want "+str(number)+' '+color+" apples.")
+ apples('red',4)
 
-# def add(a,b):
-#   return a+b
+ def add(a,b):
+   return a+b
 
-# def multiply(a,b):
-#   return a*b
+ def multiply(a,b):
+   return a*b
 
-# print("3+5=",add(3,5))
-# print("3*5=",multiply(3,5))
+ print("3+5=",add(3,5))
+ print("3*5=",multiply(3,5))
 
 
-# def gauss_sum(start,stop):
-#   sum = 0
-#   for num in range(start,stop+1):
-#     sum +=num
-#   return sum
+ def gauss_sum(start,stop):
+   sum = 0
+   for num in range(start,stop+1):
+     sum +=num
+   return sum
 
-# print("1+2+...+10=",gauss_sum(1,10))
-# print("1+2+...+100=",gauss_sum(1,100))
+ print("1+2+...+10=",gauss_sum(1,10))
+ print("1+2+...+100=",gauss_sum(1,100))
 
  
 # class and object
@@ -102,47 +102,47 @@ print(calculator.multiply())
 
 
 # Math game
-# import random
+ import random
 
-# print("Welcome to MATH WORLD!")
+ print("Welcome to MATH WORLD!")
 
 
-# q1 = "Do you want to do addition or multiplication? \n (enter 1 for addition and 2 for multiplication) \n"
+ q1 = "Do you want to do addition or multiplication? \n (enter 1 for addition and 2 for multiplication) \n"
 
-# operation = input(q1)
-# while operation != '1' and operation != '2':
-#   operation = input(q1)
+ operation = input(q1)
+ while operation != '1' and operation != '2':
+   operation = input(q1)
 
-# condition=True
+ condition=True
 
-# if operation == '1':
-#   while condition:
-#     num1 = random.randrange(1, 101)
-#     num2 = random.randrange(1, 101)
-#     # call the function add()
-#     add12 = add(num1,num2)
+ if operation == '1':
+   while condition:
+     num1 = random.randrange(1, 101)
+     num2 = random.randrange(1, 101)
+     # call the function add()
+     add12 = add(num1,num2)
 
-#     your_answer=input("What's "+str(num1)+'+'+str(num2)+"? \n")
+     your_answer=input("What's "+str(num1)+'+'+str(num2)+"? \n")
 
-#     if int(your_answer)==add12:
-#       condition=False
-#       print("Bingo! You are right!")
-#     else:
-#       print("Oho, try again.")
+     if int(your_answer)==add12:
+       condition=False
+       print("Bingo! You are right!")
+     else:
+       print("Oho, try again.")
 
 
  
-# if operation == '2':
-#   while condition:
-#     num1 = random.randrange(1, 10)
-#     num2 = random.randrange(1, 10)
-#     # call the function multiply()
-#     mul12 = multiply(num1,num2)
+ if operation == '2':
+   while condition:
+     num1 = random.randrange(1, 10)
+     num2 = random.randrange(1, 10)
+     # call the function multiply()
+     mul12 = multiply(num1,num2)
 
-#     your_answer=input("What's "+str(num1)+'*'+str(num2)+"? \n")
-#     if int(your_answer)==mul12:
-#       condition=False
-#       print("Bingo! You are right!")
-#     else:
-#       print("Oho, try again.")
+     your_answer=input("What's "+str(num1)+'*'+str(num2)+"? \n")
+     if int(your_answer)==mul12:
+       condition=False
+       print("Bingo! You are right!")
+     else:
+       print("Oho, try again.")
 
