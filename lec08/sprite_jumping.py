@@ -21,8 +21,9 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.image.load("./img/p1_jump.png").convert()
-
+        # set_colorkey() just tells Pygame that when we draw the image we want to ignore the background ("black") color of the image.
         self.image.set_colorkey(BLACK)
+        
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH /2, HEIGHT / 2)
         # rescale the size of the image
