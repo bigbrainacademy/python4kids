@@ -29,6 +29,15 @@ class MySprite(pygame.sprite.Sprite):
     def update(self):
         self.index += 1
 
+        # walk along the line
+        self.rect.x = self.rect.x +10
+
+        #print(self.rec.x)
+        # if walk outside, appear from left
+        if self.rect.x > WIDTH:
+          self.rect.x=0
+ 
+
         if self.index >= len(self.images):
             self.index = 0
         
