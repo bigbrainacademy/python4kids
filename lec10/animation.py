@@ -1,6 +1,6 @@
 import pygame
 
-SIZE = WIDTH, HEIGHT = 600, 400 #the width and height of our screen
+SIZE = (WIDTH, HEIGHT) = (600, 400) #the width and height of our screen
 BACKGROUND_COLOR = pygame.Color('white') #The background colod of our window
 FPS = 10 #Frames per second
 
@@ -24,7 +24,7 @@ class MySprite(pygame.sprite.Sprite):
 
         self.image = self.images[self.index]
 
-        self.rect = pygame.Rect(5, 5, 150, 198)
+        self.rect = pygame.Rect(50, 50, 150, 198)
 
     def update(self):
         self.index += 1
@@ -34,12 +34,15 @@ class MySprite(pygame.sprite.Sprite):
         
         self.image = self.images[self.index]
 
+Color_line=(0,255,0)
 def main():
     pygame.init()
     screen = pygame.display.set_mode(SIZE)
     my_sprite = MySprite()
     my_group = pygame.sprite.Group(my_sprite)
     clock = pygame.time.Clock()
+
+
 
     while True:
       for event in pygame.event.get():
@@ -50,6 +53,9 @@ def main():
       my_group.update()
       screen.fill(BACKGROUND_COLOR)
       my_group.draw(screen)
+
+      pygame.draw.line(screen,Color_line,(0,250),(WIDTH,250))
+
       pygame.display.update()
       clock.tick(10)
 
