@@ -35,9 +35,7 @@ class Player(pygame.sprite.Sprite):
     self.surf = pygame.transform.scale(self.surf, (50, 30))
     #remove bg color (black)
     self.surf.set_colorkey(BLACK)
-
-    # self.surf = pygame.Surface((75, 25))
-    # self.surf.fill((255, 255, 255))
+ 
     self.rect = self.surf.get_rect()
 
   # Move the sprite based on user keypresses
